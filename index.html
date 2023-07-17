@@ -1,0 +1,1399 @@
+
+<!doctype html>
+<html style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;height: auto;min-height: 100vh;box-sizing: border-box !important;">
+<head style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+
+    <meta charset="UTF-8" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+    <title style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">Landing Page (test version)</title>
+
+    <style type="text/css" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+        a.class1:hover {
+            border-bottom: 1px solid currentColor;
+            text-decoration: none;
+        }
+        a.class3:hover {
+            border-bottom: 1px solid currentColor;
+            text-decoration: none;
+        }
+       
+
+        html, body {
+            height: 100%;
+        }
+
+        p {
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        img, a img {
+            border: 0;
+            height: auto;
+            outline: none;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100%;
+        }
+
+        .mcnTextBlock:after, .mcnTextBlockInner:after {
+            display: table;
+            clear: both;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box !important;
+        }
+
+        html, body, .wrapper {
+            height: auto;
+            min-height: 100vh;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .templateSection {
+            position: relative;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: center;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+            .templateSection:last-of-type {
+                flex-grow: 2;
+            }
+
+        .templateColumn {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .columnContainer {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        a.mcnButton {
+            display: block;
+        }
+
+        .mcnImage {
+            vertical-align: bottom;
+        }
+
+        .mcnTextContent {
+            word-break: break-word;
+            flex-flow: column;
+        }
+
+            .mcnTextContent img {
+                max-width: 100%;
+                height: auto !important;
+            }
+
+        .mcnDividerBlock {
+            table-layout: fixed !important;
+        }
+
+
+
+
+
+
+
+        .mcnTemplatePageBanner {
+            position: fixed;
+            padding: 18px;
+            bottom: 0;
+            top: unset;
+            left: 0;
+            right: 0;
+            box-sizing: border-box;
+            z-index: 1;
+        }
+
+        .mcnPageBannerContainer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 18px;
+            box-shadow: 0px 2px 3px rgba(36, 28, 21, 0.1);
+            border: 1px solid #dedddc;
+        }
+
+        .mcnPageBannerContentContainer {
+            padding: 0 24px 0 0;
+        }
+
+        .mcnCloseButton {
+            opacity: .4;
+            background: url(data:image/png);
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            height: 24px;
+            width: 24px;
+        }
+
+            .mcnCloseButton:hover {
+                opacity: .9;
+            }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+
+        .mcnPaymentTextContent {
+            min-width: 284px;
+        }
+
+        .templateSection {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .contentContainer {
+            max-width: 960px;
+            width: 100%;
+            flex: 0 0 auto;
+        }
+
+        h1 {
+            color: #FFFFFF;
+            font-family: Nunito;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 125%;
+            letter-spacing: normal;
+            text-align: left;
+        }
+
+        h2 {
+            color: #4A4A4A;
+            font-family: Nunito;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 125%;
+            letter-spacing: normal;
+            text-align: left;
+        }
+
+        h3 {
+            color: #72DDC3;
+            font-family: Nunito;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 200%;
+            letter-spacing: normal;
+            text-align: center;
+        }
+
+        h4 {
+            color: #4A4A4A;
+            font-family: Nunito;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 150%;
+            letter-spacing: normal;
+            text-align: center;
+        }
+
+        h5 {
+            color: #FFFFFF;
+            font-family: Nunito;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 150%;
+            letter-spacing: normal;
+            text-align: center;
+        }
+
+        h6 {
+            font-family: 'SecuritasB', Arial, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h7 {
+            font-family: 'Securitas', Arial, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h8 {
+            font-family: 'SecuritasL', Arial, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+        .templateHeader {
+            background-color: #0b1e2d;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 1px none;
+            border-bottom: 0;
+            padding-top: 0px;
+            padding-bottom: 100px;
+        }
+
+        .headerContainer {
+            background-color: #transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .templateHeader .mcnTextContent, .templateHeader .mcnTextContent p {
+            color: #FFFFFF;
+            font-family: Nunito;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: left;
+        }
+
+            .templateHeader .mcnTextContent a, .templateHeader .mcnTextContent p a {
+                color: #FFFFFF;
+                font-weight: normal;
+                text-decoration: none;
+            }
+
+        .templateSplash {
+            background-color: #0b1e2d;
+            background-image: url("https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/116a1e04-37b8-fc5e-fdc0-65f6c458aa1f.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-right: 95px;
+        }
+
+        .splashContainer {
+            background-color: #transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+            .splashContainer .mcnTextContent, .splashContainer .mcnTextContent p {
+                color: #FFFFFF;
+                font-family: Nunito;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+            }
+
+                .splashContainer .mcnTextContent a, .splashContainer .mcnTextContent p a {
+                    color: #FFFFFF;
+                    font-weight: normal;
+                    text-decoration: underline;
+                }
+
+        .templateBody {
+            background-color: #ffffff;
+            background-image: url("https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/814673fb-c301-d13e-15be-0c99f49fec15.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+
+        .bodyContainer {
+            background-color: #transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+            .bodyContainer .mcnTextContent, .bodyContainer .mcnTextContent p, .mcnTemplatePageBanner {
+                color: #686868;
+                font-family: Nunito;
+                font-size: 25px;
+                line-height: 150%;
+                text-align: center;
+            }
+
+                .bodyContainer .mcnTextContent a, .bodyContainer .mcnTextContent p a, .mcnTemplatePageBanner a, .mcnTemplatePageBanner p a {
+                    color: #4A4A4A;
+                    font-weight: normal;
+                    text-decoration: underline;
+                }
+
+        .templateDetails {
+            background-color: #0b1e2d;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 86px;
+            padding-bottom: 86px;
+        }
+
+        .detailsContainer {
+            background-color: #transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+            .detailsContainer .mcnTextContent, .detailsContainer .mcnTextContent p {
+                color: #FFFFFF;
+                font-family: Nunito;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+            }
+
+                .detailsContainer .mcnTextContent a, .detailsContainer .mcnTextContent p a {
+                    color: #FFFFFF;
+                    font-weight: normal;
+                    text-decoration: underline;
+                }
+
+        .templateFooter {
+            background-color: #transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 162px;
+            padding-bottom: 64px;
+        }
+
+        <meta name="viewport" content="width=device-width" >
+
+        .footerLeftColumnContainer {
+            background-color: #transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 0px;
+            padding-bottom: 0;
+        }
+
+        .footerLeftColumnContainer .mcnTextContent, .footerLeftColumnContainer .mcnTextContent p {
+            color: #686868;
+            font-family: Nunito;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: left;
+        }
+
+            .footerLeftColumnContainer .mcnTextContent a, .footerLeftColumnContainer .mcnTextContent p a {
+                color: #4A4A4A;
+                font-weight: normal;
+                text-decoration: underline;
+            }
+
+        .footerRightColumnContainer {
+            background-color: #transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-top: 0;
+            border-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+            .footerRightColumnContainer .mcnTextContent, .footerRightColumnContainer .mcnTextContent p {
+                color: #686868;
+                font-family: Nunito;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: left;
+            }
+
+                .footerRightColumnContainer .mcnTextContent a, .footerRightColumnContainer .mcnTextContent p a {
+                    color: #4A4A4A;
+                    font-weight: normal;
+                    text-decoration: underline;
+                }
+
+        @media only screen and (max-width: 480px) {
+            body, table, td, p, a, li, blockquote {
+                -webkit-text-size-adjust: none !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+        }
+
+
+
+
+
+        @media only screen and (max-width: 480px) {
+            .monkeyrewards {
+                order: 1;
+                margin-bottom: 18px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .reportAbuseWrapper {
+                order: 2;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnCaptionBlockInner {
+                flex: 0 0 auto;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnCaptionBlock {
+                flex-direction: column;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnVideoContainer {
+                width: 100% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnRetinaImage {
+                max-width: 100% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnTextBlockInner {
+                padding: 9px 0 !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageGroupContent {
+                padding: 9px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnCaptionColumn {
+                flex-direction: column !important;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .solid {
+                max-width: 100% !important;
+            }
+        }
+         @media only screen and (max-width: 480px) {
+            .mcnFollowContent {
+                padding-left: 0px !important;
+                padding-right: 120px !important;
+            }
+        }
+
+
+
+        @media only screen and (max-width: 480px) {
+            .mcnCaptionLeftContentInner, .mcnCaptionRightContentInner {
+                padding: 0 9px 9px 9px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageCardRightContentInner .mcnImageCardImageContent, .mcnImageCardLeftContentInner .mcnImageCardImageContent {
+                padding: 18px 18px 0 18px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnTextBlockInner, .mcnBoxedTextBlockInner, .mcnImageCardLeftContentInner, .mcnImageCardRightContentInner, .mcnCaptionLeftContentInner, .mcnCaptionRightContentInner {
+                flex-direction: column !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnCaptionLeftContentInner .mcnTextContent, .mcnCaptionRightContentInner .mcnTextContent {
+                padding: 9px 9px 0 9px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageCardTopImageContent, .mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent {
+                padding-top: 18px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageCardBottomImageContent {
+                padding-bottom: 9px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageGroupBlockInner {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageGroupBlockOuter {
+                padding-top: 9px !important;
+                padding-bottom: 9px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnTextContent, .mcnBoxedTextContentColumn {
+                padding-right: 18px !important;
+                padding-left: 18px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageCardLeftImageContent, .mcnImageCardRightImageContent {
+                padding-right: 18px !important;
+                padding-bottom: 0 !important;
+                padding-left: 18px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcpreview-image-uploader {
+                display: none !important;
+                width: 100% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnRecContentContainer--row {
+                flex: 0 0 50% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnRecContentContainer .mcnProductTitle, .mcnRecContentContainer .mcnButtonBlock, .mcnRecContentContainer .mcnProductPrice {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnPaymentProduct {
+                flex-direction: column !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnPaymentTextContent {
+                min-width: 200px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnPaymentGalleryImages div {
+                width: 100% !important;
+                min-width: 0 !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnGalleryImage:nth-last-child(2):first-child, .mcnGalleryImage:nth-last-child(2):first-child ~ .mcnGalleryImage {
+                height: 90px !important;
+                min-width: 55px !important;
+                max-width: 90px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnGalleryImage:nth-last-child(3):first-child, .mcnGalleryImage:nth-last-child(3):first-child ~ .mcnGalleryImage {
+                height: 60px !important;
+                min-width: 55px !important;
+                max-width: 60px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnGalleryImage:nth-last-child(4):first-child, .mcnGalleryImage:nth-last-child(4):first-child ~ .mcnGalleryImage {
+                height: 60px !important;
+                min-width: 35px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnGalleryImage:nth-last-child(5):first-child, .mcnGalleryImage:nth-last-child(5):first-child ~ .mcnGalleryImage {
+                height: 50px !important;
+                min-width: 35px !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .columnContainer {
+                flex-direction: column !important;
+            }
+        }
+
+
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 36px !important;
+                line-height: 125% !important;
+                font-weight: bold !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h2 {
+                font-size: 30px !important;
+                line-height: 150% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h3 {
+                font-size: 24px !important;
+                line-height: 150% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h4 {
+                font-size: 20px !important;
+                line-height: 200% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnBoxedTextContentContainer .mcnTextContent, .mcnBoxedTextContentContainer .mcnTextContent p {
+                font-size: 14px !important;
+                line-height: 150% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .headerLeftColumnContainer .mcnTextContent, .headerLeftColumnContainer .mcnTextContent p {
+                font-size: 20px !important;
+                line-height: 150% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .headerRightColumnContainer .mcnTextContent, .headerRightColumnContainer .mcnTextContent p {
+                font-size: 20px !important;
+                line-height: 150% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .splashContainer .mcnTextContent, .splashContainer .mcnTextContent p {
+                font-size: 20px !important;
+                line-height: 150% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .bodyContainer .mcnTextContent, .bodyContainer .mcnTextContent p, .mcnTemplatePageBanner {
+                font-size: 20px !important;
+                line-height: 150% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .detailsContainer .mcnTextContent, .detailsContainer .mcnTextContent p {
+                font-size: 20px !important;
+                line-height: 150% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .footerLeftColumnContainer .mcnTextContent, .footerLeftColumnContainer .mcnTextContent p {
+                font-size: 20px !important;
+                line-height: 150% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .footerRightColumnContainer .mcnTextContent, .footerRightColumnContainer .mcnTextContent p {
+                font-size: 20px !important;
+                line-height: 150% !important;
+            }
+        }
+    </style>
+    <link href="FormSheet.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link rel="shortcut icon" sizes="16x16" href="https://www.securitas.com.tr/build/brand/favicon-16x16.png" type="image/png" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #031F30;
+        }
+
+
+        #container {
+            width: 600px;
+            height: 600px;
+            margin: 5px auto 0 auto;
+            background: #fff;
+        }
+    </style>
+
+</head>
+<body style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;height: auto;width: 100%;position: relative;min-height: 100vh;box-sizing: border-box !important;margin: 0 !important;padding: 0 !important;">
+
+    <div class="wrapper" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;height: auto;min-height: 100vh;display: flex;flex-direction: column;box-sizing: border-box !important;">
+        <div mc:template_section="Header" class="templateSection templateHeader" data-template-container style="background:#0b1e2d none no-repeat center/cover;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;position: relative;display: flex;flex-shrink: 0;justify-content: center;padding-right: 0px;padding-left: 0px;background-color: #031F30;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 1px none;border-bottom: 0;padding-top: 0px;padding-bottom: 30px;box-sizing: border-box !important;">
+            <div class="headerContainer contentContainer templateColumn" style="background:#transparent none no-repeat center/cover;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;display: flex;flex-direction: column;max-width: 960px;width: 100%;flex: 0 0 auto;background-color: #transparent;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;box-sizing: border-box !important;">
+                <div class="logoContainer" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                    <div class="mcnDividerBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;table-layout: fixed !important;">
+                        <div class="mcnDividerBlockInner" style="padding: 2px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                            <div class="mcnDividerContent" style="border-top: 2px none #EAEAEA;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columnContainer" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;display: flex;flex-direction: row;width: 100%;box-sizing: border-box !important;">
+                    <div class="headerLeftColumnContainer column" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;flex: 0.9;box-sizing: border-box !important;">
+                        <div width="100%" class="mcnTextBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                            <div class="mcnTextBlockInner" style="display: flex;padding: 18px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                                <div style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <div class="mcnTextContent" style="padding: 0px 9px 9px;line-height: 200%;text-align: left;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;word-break: break-word;flex-flow: column;color: #FFFFFF;font-family: Nunito;font-size: 18px;box-sizing: border-box !important;">
+                                        <div style="text-align: justify;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                            <span style="font-size: 22px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;"><a href="https://www.securitas.com.tr/"><img data-file-id="5680252" height="52" src="page1-img/logo.svg" style="border: 0px initial;width: 180px;height: 52px;margin: 0px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;outline: none;text-decoration: none;max-width: 100%;box-sizing: border-box !important;" width="180"> </a></abbr></span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                        </div>
+
+                                        <div style="text-align: justify;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                            <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                            <span style="font-family:Securitas; font-size: 19px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                                Securitas Güvenlik Çözümleri ile ilgili<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                bilgi almak için hemen formu<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                doldurabilirsiniz! <br />
+
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div><div class="container2">
+                            <form action="iletisim_formu.php">
+
+
+                                <input type="text" id="isim" name="isim" placeholder="Adınız ve soyadınız:">
+
+
+
+                                <input type="text" id="sirket" name="sirket" placeholder="Şirketiniz:">
+                                <input type="text" id="tel_no" name="tel_no" placeholder="Telefon numaranız:">
+                                <input type="text" id="email" name="email" placeholder="E-posta adresiniz:" required>
+                                <textarea id="adres" name="adres" placeholder="Şirket adresiniz:" style="height:90px"></textarea>
+                                <select id="hizmet" name="hizmet">
+                                    <option value="hizmet">Hangi hizmet hakkında bilgi almak istersiniz? </option>
+
+                                    <option value="entegre">Entegre Çözümler</option>
+                                    <option value="insanlı">İnsanlı Güvenlik Hizmetleri</option>
+
+                                    <option value="güvenlik">Güvenlik Teknolojileri</option>
+                                    <option value="uzaktan">Uzaktan İzleme Hizmetleri</option>
+                                    <option value="itfaiye">İtfaiye Hizmetleri</option>
+                                    <option value="kontrol">Kontrol ve Destek Hizmetleri</option>
+                                    <option value="risk">Risk Yönetimi ve Danışmanlık Hizmetleri</option>
+                                    <option value="diger">Diğer</option>
+
+
+                                </select>
+
+
+                                <textarea id="mesaj" name="mesaj" placeholder="Mesajınız:" style="height:140px"></textarea>
+
+
+                                <input type="submit" value="Gönder">
+
+                            </form>
+                        </div> <div width="100%" class="mcnTextBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                            <div class="mcnTextBlockInner" style="display: flex;padding: 12px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                                <div style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <div class="mcnTextContent" style="padding-top: 0; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; word-break: break-word; white-space: nowrap; flex-flow: column; color: #FFFFFF; font-family: SecuritasL; font-size: 18px; line-height: 150%; text-align: justify; box-sizing: border-box !important;">
+                                        <h5 class="null" style="text-align: left;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;display: block;margin: 0;padding: 0;color: #FFFFFF;font-family: SecuritasL;font-size: 10px;font-style: normal;font-weight: bold;line-height: 150%;letter-spacing: normal;box-sizing: border-box !important;">
+                                            <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                            <span style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;"><span class="mc-toc-title" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;"><img data-file-id="5679456" height="31" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/e2863396-d0bd-75ca-5b44-7a929eb27b15.png" style="border: 0px;width: 10px;height: 10px;margin: 0px -5px  -3px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;outline: none;max-width: 100%;box-sizing: border-box !important;" width="50"></span></span><span style="font-size: 12px; font-family: SecuritasB;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">&nbsp;&nbsp;&nbsp;Securitas Türkiye’nin Kişisel Verilerin İşlenmesi ve Korunmasına  <br />  &nbsp;&nbsp;&nbsp;ilişkin aydınlatma metnine ulaşmak için <a href="https://www.securitas.com.tr/globalassets/turkey/blocks/blog-yazlar/bize-ulasin-aydinlatma-metni.pdf"><u>tıklayınız.</u></a></span>
+                                    </div> <br />
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="headerRightColumnContainer column" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;flex: 1;box-sizing: border-box !important;">
+
+                        <div class="mcnImageGroupContentContainer" style="display: flex;flex: 1;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                            <div class="mcnImageGroupContent" style="padding: 6px 25px;padding-right: 0px; padding-right: 5px;width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+
+                                <div class="container">
+                                    <div class="centereddünya">
+                                        <div style="text-align: justify;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                            <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                            <span style="font-family:SecuritasB; font-size: 28px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                                Dünyanızın daha güvenli <br /> hale gelmesine yardımcı <br /> oluyoruz. <br />
+                                            </span>
+
+                                            <span style="font-family:Securitas; font-size: 12px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                                Securitas Türkiye olarak 11 bölge müdürlüğümüz, 74 şube <br /> müdürlüğümüz ve 21 bini aşkın çalışanımız bulunmaktadır. <br />
+                                                Endüstriyel tesislerden perakende zincirlerine, turizmden <br /> enerjiye, alışveriş merkezlerinden madenciliğe kadar 28 farklı <br />
+                                                sektörde 1.200'den fazla firmaya hizmet vermekteyiz.
+                                            </span>
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <img alt="" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/b47d2dca-ddab-0c82-b5f4-0b5296ad8105.jpg" width="1999" style="max-width: 101%; " align-self: center;border-radius: 0%;box-shadow: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;vertical-align: bottom;box-sizing: border-box !important;" class="mcnImage">
+                                </div>
+
+                            </div>
+
+                        </div><div class="mcnImageGroupBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                            <div class="mcnImageGroupBlockInner" style="display: flex;justify-content: center;padding: 3px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                                <div class="mcnImageGroupContentContainer" style="display: flex;flex: 1;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <div class="mcnImageGroupContent" style="padding: 0 22px; padding-right: 3px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                        <div class="container">
+
+                                            <div class="centeredentegre">
+                                                <div style="text-align: justify;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <span style="font-family:Securitas; font-size: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                                        <a href="https://www.securitas.com.tr/settings-page/kisisel-verilerin-korunmasi/" class="class3" style="font-size: 14px; font-family: Securitas; text-decoration:none; color:white; ">Entegre Çözümler</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+
+                                            <img alt="" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/afbff220-860e-e29d-513c-61a08e6922ac.jpg" width="1900" style="max-width: 101%;align-self: center;border-radius: 0%;box-shadow: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;vertical-align: bottom;box-sizing: border-box !important;" class="mcnImage">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="mcnImageGroupBlockInner" style="display: flex;justify-content: center;padding: 6px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                                <div class="mcnImageGroupContentContainer" style="display: flex;flex: 1;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <div class="mcnImageGroupContent" style="padding: 0 18px; padding-right: 0px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                        <div class="container">
+
+                                            <div class="centeredinsanlı">
+                                                <div style="text-align: justify;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <span style="font-family:Securitas; font-size: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                                        İnsanlı Güvenlik Hizmetleri
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <img alt="" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/10d8dc75-5072-a3ab-fd9a-dfe4cac84fbf.jpg" width="2000" style="max-width: 101%;align-self: center;border-radius: 0%;box-shadow: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;vertical-align: bottom;box-sizing: border-box !important;" class="mcnImage">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div><div class="mcnImageGroupBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                            <div class="mcnImageGroupBlockInner" style="display: flex;justify-content: center;padding: 6px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                                <div class="mcnImageGroupContentContainer" style="display: flex;flex: 1;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <div class="mcnImageGroupContent" style="padding: 0 18px; padding-right: 1px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                        <div class="container">
+
+                                            <div class="centeredgüvenlik">
+                                                <div style="text-align: justify;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <span style="font-family:Securitas; font-size: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                                        Güvenlik Teknolojileri
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <img alt="" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/c23e9624-3073-91a6-db08-b730b0cfcfde.jpg" width="3873" style="max-width: 101%;align-self: center;box-shadow: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;vertical-align: bottom;box-sizing: border-box !important;" class="mcnImage">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mcnImageGroupBlockInner" style="display: flex;justify-content: center;padding: 6px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                                <div class="mcnImageGroupContentContainer" style="display: flex;flex: 1;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <div class="mcnImageGroupContent" style="padding: 0 18px; padding-right: 0px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                        <div class="container">
+
+                                            <div class="centereduzaktan">
+                                                <div style="text-align: justify;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <span style="font-family:Securitas; font-size: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                                        Uzaktan İzleme Hizmetleri
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <img alt="" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/aad4172b-5a12-541a-3769-bfaac758f958.jpg" width="3870" style="max-width: 101%;align-self: center;box-shadow: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;vertical-align: bottom;box-sizing: border-box !important;" class="mcnImage">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div><div class="mcnImageGroupBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                            <div class="mcnImageGroupBlockInner" style="display: flex;justify-content: center;padding: 6px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                                <div class="mcnImageGroupContentContainer" style="display: flex;flex: 1;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <div class="mcnImageGroupContent" style="padding: 0px 18px; padding-right: 1px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important; ">
+                                        <div class="container">
+
+                                            <div class="centereditfaiye">
+
+                                                <span style="font-family:Securitas; font-size: 14px;">İtfaiye Hizmetleri</span>
+
+                                            </div>
+
+                                            <img alt="" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/517b52f5-8701-beb5-7efa-3f5c3f4f20fc.png" width="1442" style="max-width: 101%;align-self: center;border-radius: 0%;box-shadow: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;vertical-align: bottom;box-sizing: border-box !important;" class="mcnImage">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mcnImageGroupBlockInner" style="display: flex;justify-content: center;padding: 6px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                                <div class="mcnImageGroupContentContainer" style="display: flex;flex: 1;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <div class="mcnImageGroupContent" style="padding: 0px 18px; padding-right: 0px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                        <div class="container">
+
+                                            <div class="centeredkontrol">
+                                                <div style="text-align: justify;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <span style="font-family:Securitas; font-size: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                                        Kontrol ve Destek Hizmetleri
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <img alt="" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/84c9ed1d-1a20-b148-7626-21e70d7dba51.jpg" width="3989" style="max-width: 101%;align-self: center;border-radius: 0%;box-shadow: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;vertical-align: bottom;box-sizing: border-box !important;" class="mcnImage">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div><div class="mcnImageGroupContentContainer" style="display: flex;flex: 1;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                            <div class="mcnImageGroupContent" style="padding: 1px 24px; padding-right: 4.5px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+
+                                <div class="container">
+
+                                    <div class="centeredrisk">
+                                        <div style="text-align: justify;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                            <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                            <span style="font-family:Securitas; font-size: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                                Risk Yönetimi ve Danışmanlık Hizmetleri
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <img alt="" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/44e7345d-8685-6394-567d-ed973bce2dfa.jpg" width="auto" style="max-width: 101%;align-self: center;flex: 0 0 auto;box-shadow: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;vertical-align: bottom;box-sizing: border-box !important;" class="mcnImage">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="button-flex-container">
+                    <span class="divider"><!-- divider --></span>
+                    <a href="#down" class="class2"> <input type="image" src="page1-img/arrow.png" button onclick="butn(); butn1();" alt="Submit" width="30" height="30">  </a>
+                    <div id="down">
+
+                    </div>
+
+
+
+                
+
+
+
+                    <span class="divider"><!-- divider --></span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div mc:template_section="Splash" class="templateSection templateSplash" data-template-container style="background:#0b1e2d; no-repeatcenter/cover;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;position: relative;display: none;flex-shrink: 0;justify-content: center;padding-right: 0px;padding-left: 0px;background-color: #0b1e2d;background-image: url(https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/116a1e04-37b8-fc5e-fdc0-65f6c458aa1f.png);background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0   px;padding-bottom: 0px;box-sizing: border-box !important;">
+            <div class="splashContainer contentContainer" style="background:#transparent none no-repeat center/cover;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;max-width: 960px;width: 100%;flex: 0 0 auto;background-color: #transparent;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;box-sizing: border-box !important;">
+                <div width="100%" class="mcnTextBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                    <div class="mcnTextBlockInner" style="display: flex;padding: 9px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+
+
+
+
+
+                        <div style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                            <div class="mcnTextContent" style="padding-top: 0;padding-right: 9px;padding-bottom: 9px;padding-left: 40px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;word-break: break-word;flex-flow: column;color: #FFFFFF;font-family: SecuritasB;font-size: 18px;line-height: 150%;text-align: center;box-sizing: border-box !important;">
+                                <div style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <span style="font-size: 37px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;"><strong style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">RAKAMLARLA&nbsp; SECURITAS&nbsp; TÜRKİYE&nbsp;&nbsp;</strong></span><br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                                    <img data-file-id="5680076" height="130" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/5d81bd5b-9674-86be-0513-6991d04338c7.png" style="border: 0px; width: 140px; height: 140px; margin: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; outline: none; text-decoration: none; max-width: 100%; box-sizing: border-box !important; " width="130"> &nbsp; &nbsp; &nbsp;&nbsp; <img data-file-id="5680076" height="130" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/6756aa8b-64ff-d13e-517d-efe29f90f826.png" style="border: 0px initial; width: 140px; height: 140px; margin: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; outline: none; text-decoration: none; max-width: 100%; box-sizing: border-box !important; " width="130">&nbsp; &nbsp; &nbsp; &nbsp; <img data-file-id="5680172" height="125" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/2a6a30bc-b511-db29-f38e-71d63f9b9d66.png" style="border: 0px initial; width: 140px; height: 140px; margin: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; outline: none; text-decoration: none; max-width: 100%; box-sizing: border-box !important; " width="140">&nbsp; &nbsp; &nbsp; &nbsp;<img data-file-id="5680076" height="140" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/e29bb1ff-f323-dba1-869f-a27e4d985bda.png" style="border: 0px initial; width: 140px; height: 140px; margin: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; outline: none; text-decoration: none; max-width: 100%; box-sizing: border-box !important; " width="130"> &nbsp; &nbsp; &nbsp; &nbsp; <img data-file-id="5680076" height="130" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/84b94c56-0ef0-4373-b820-ef398ef1af58.png" style="border: 0px; width: 140px; height: 140px; margin: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; outline: none; text-decoration: none; max-width: 100%; box-sizing: border-box !important;" width="130">&nbsp; &nbsp; &nbsp;&nbsp;<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                </div>
+                                <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                &nbsp;
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </div><div class="mcnDividerBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;table-layout: fixed !important;">
+                    <div class="mcnDividerBlockInner" style="padding: 18px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                        <div class="mcnDividerContent" style="border-top: 2px none #EAEAEA;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;"></div>
+                    </div>
+                </div><div width="100%" class="mcnTextBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                    <div class="mcnTextBlockInner" style="display: flex;padding: 2px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                        <div style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                            <div class="mcnTextContent" style="padding: 0px 300px 0px; line-height: 180%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; word-break: break-word; white-space: nowrap; flex-flow: column; color: #FFFFFF; font-family: SecuritasL; font-size: 18px; text-align: center; box-sizing: border-box !important; ">
+                                <div style="text-align: left;">
+                                    <span style="font-size: 36px; font-family: SecuritasB; color: #F41F30;"><strong>Neden Securitas? </strong></span><br>
+                                    <span style="font-size:24px"><img data-file-id="5681404" height="40" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/2e213772-23b2-cd13-0cb8-fdadba3068d4.png" style="border: 0px  ; width: 30px; height: 30px; margin: 0px -14px -10px;" width="40"></span><span style="font-size: 17px; font-family: SecuritasL; color: white;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Katma değer odaklı hizmet </strong></span><br>
+                                    <span style="font-size:20px"><strong><img data-file-id="5681412" height="40" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/9bb83de6-0cf6-9aec-9e1f-52f471d85901.png" style="width: 30px; height: 30px; margin: 0px -14px -10px;" width="40"></strong></span>
+
+                                    <span style="font-size: 17px; font-family: SecuritasL; color: white;"><strong>&nbsp;&nbsp;&nbsp;Sektöründe lider marka ve lider referanslar </strong></span><br>
+                                    <img data-file-id="5681420" height="40" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/9b034cc9-5c63-d5fc-580f-5e98fa552445.png" style="width: 30px; height: 30px; margin: 0px -14px -10px;" width="40">
+                                    <span style="font-size: 17px; font-family: SecuritasL; color: white;"><strong>&nbsp;&nbsp;&nbsp;Global tecrübe ve sigorta </strong></span><br>
+                                    <img data-file-id="5681432" height="40" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/0503164b-3ce1-469e-edc3-d62abebbe93e.png" style="border: 0px  ; width: 30px; height: 30px; margin: 0px -14px -10px;" width="40"><span style="font-size: 17px; font-family: SecuritasL;  color: white;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Entegre güvenlik çözümleri ile hizmette <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;verim optimizasyonu  </strong></span><br>
+
+
+                                    <img data-file-id="5681440" height="40" src="https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/38d3bd59-98e1-ad9f-8153-22bffc06fffa.png" style="border: 0px  ; width: 30px; height: 30px; margin: 0px -14px -10px;" width="40">&nbsp;<span style="font-size: 17px; font-family: SecuritasL; color: white;"><strong>&nbsp;&nbsp;&nbsp;Alanında uzman personeller </strong></span><br>
+                                    </span>
+
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div mc:template_section="Body" class="templateSection templateBody" data-template-container style="background:#ffffff no-repeat center/cover;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;position: relative;display: none;flex-shrink: 0;justify-content: center;padding-right: 0px;padding-left: 0px;background-color: #ffffff;background-image: url(https://mcusercontent.com/c1a3a4653fa4f79c84788c530/images/814673fb-c301-d13e-15be-0c99f49fec15.jpeg);background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 120px;padding-bottom: 120px;box-sizing: border-box !important;">
+            <div class="bodyContainer contentContainer" style="background:#transparent none no-repeat center/cover;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;max-width: 960px;width: 100%;flex: 0 0 auto;background-color: #transparent;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;box-sizing: border-box !important;">
+                <div width="100%" class="mcnTextBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                    <div class="mcnTextBlockInner" style="display: flex;padding: 9px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                        <div style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                            <div class="mcnTextContent" style="padding: 0px 9px 40px;color: #FFFFFF;line-height: 180%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;word-break: break-word;flex-flow: column;font-family:SecuritasL;font-size: 25px;text-align: center;box-sizing: border-box !important;">
+                                <span style="font-size: 35px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <strong style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                        Neden Securitas Sorusunun Cevabını<br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                        Müşterilerimizden Dinleyin
+                                    </strong>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><div class="mcnVideoBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                    <div class="mcnVideoBlockInner" style="padding: 9px 18px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                        <div class="mcnImageCardBottomContent mcnVideoContainer" style="display: flex;flex-direction: column;margin: 0px auto;width: 100%;border: 8px solid #624FB0;background-color: #404040;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                            <div style="display: flex;flex: 0 0 auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                                <table width="100%" height="100%" cellspacing="0" cellpadding="0" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                    <tbody style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                        <tr style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                            <td style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                <div class="cardVideoContainer" style="position: relative;height: 0;overflow: hidden;padding-bottom: 56.25%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                                    <iframe src="https://www.youtube.com/embed/xPypZfMo2ik" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></iframe>*|END:WEB_VIDEO|*
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="templateSection templateFooter" style="position: relative; display: flex; flex-shrink: 0; justify-content: center; padding: 0px 0px 0px; background-image: none; background-repeat: no-repeat; background-position: center center; background-size: cover; border-top: 0px; border-bottom: 0px; box-sizing: border-box !important;">
+            <div class="columnContainer contentContainer" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;display: flex;flex-direction: row;width: 100%;max-width: 960px;flex: 0 0 auto;box-sizing: border-box !important;">
+                <div class="footerLeftColumnContainer column" style="background:#transparent none no-repeat center/cover;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;flex: 1;background-color: #transparent;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0px;padding-bottom: 0;box-sizing: border-box !important;">
+                    <div width="100%" class="mcnBoxedTextBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                        <div class="mcnTextBlockInner" style="display: flex; padding: 3px; padding-left: 20px; border-box; -moz-box-sizing: border-box; background-color: #031F30; border-box !important; ">
+
+                            <div style="flex: 1 ;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                <div class="mcnTextContent" style="padding-top: 0; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; white-space: nowrap; word-break: break-word; flex-flow: column; color: #FFFFFF; font-family: Securitas; font-size: 12px; line-height: 180%; text-align: left; box-sizing: border-box !important; ">
+                                    <a href="https://www.securitas.com.tr/">
+                                        <img src="footer-img/logo.svg" width="70">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid">
+
+
+
+
+
+                        <div class="mcnTextBlockInner" style="display: flex;padding: 0px; padding-left:150px; border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                            <div style="flex: 1 ;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                <div class="mcnTextContent" style="padding-top: 0; padding-right: 50px; padding-bottom: 0px; padding-left: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; white-space: nowrap; word-break: break-word; flex-flow: column; color: #FFFFFF; font-family: Securitas; font-size: 12px; line-height: 180%; text-align: left; box-sizing: border-box !important; ">
+                                    <span style="font-size: 14px; font-family: SecuritasB;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                        Faydalı Linkler <br>
+                                        <a href="https://www.securitas.com.tr/settings-page/kisisel-verilerin-korunmasi/" class="class1" style="font-size: 14px; color: white; font-family: Securitas; text-decoration: none" " >Kişisel Verilerin Korunması</a> <br />
+                                        <a href="https://www.securitas.com.tr/settings-page/kisisel-verilerin-korunmasi/bilgi-guvenligi-politikasi/" class="class1" style="font-size: 14px; color: white; font-family: Securitas; text-decoration: none">Bilgi Güvenliği Politikası</a> <br />
+                                        <a href="https://www.securitas.com.tr/settings-page/kisisel-verilerin-korunmasi/cerez-politikasi/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">Çerez Politikası</a> <br />
+                                        <a href="https://www.securitas.com.tr/settings-page/kisisel-verilerin-korunmasi/gizlilik-politikasi/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none ">Gizlilik Politikası</a> <br />
+                                        <a href="https://www.securitas.com.tr/medya/basin-odasi/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">Medya İlişkileri</a> <br />
+                                        <a href="https://www.securitas.com/en/about-us/responsible-disclosure/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none ">Sorumlu İfşa Politikası</a> <br />
+                                        <a href="https://www.securitas.com.tr/settings-page/kisisel-verilerin-korunmasi/english-gdpr/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none ">GDPR</a>
+
+                                    </span>
+
+                                </div><br />
+                            </div>
+
+                            <div style="flex: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                <div class="mcnTextContent" style="padding-top: 0; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; word-break: break-word; white-space: nowrap; flex-flow:  column; color: #FFFFFF; font-family: Securitas; font-size: 12px; line-height: 180%; text-align: left; box-sizing: border-box !important;">
+                                    <span style="font-size: 14px; font-family: SecuritasB; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                        Çözümler <br>
+                                        <a href="https://www.securitas.com.tr/hizmetler/entegre-cozumler2/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none" " >Entegre Çözümler</a> <br />
+                                        <a href="https://www.securitas.com.tr/hizmetler/insanli-guvenlik-hizmetleri/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">İnsanlı Güvenlik Hizmetleri</a> <br />
+                                        <a href="https://www.securitas.com.tr/hizmetler/guvenlik-teknolojileri/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">Güvenlik Teknolojileri</a> <br />
+                                        <a href="https://www.securitas.com.tr/hizmetler/uzaktan-izleme-hizmetleri/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">Uzaktan İzleme Hizmetleri</a> <br />
+                                        <a href="https://www.securitas.com.tr/hizmetler/itfaiye-hizmetleri/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">İtfaiye Hizmetleri</a> <br />
+                                        <a href="https://www.securitas.com.tr/hizmetler/kontrol-ve-destek-hizmetleri/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">Kontrol ve Destek Hizmetleri</a> <br />
+                                        <a href="https://www.securitas.com.tr/hizmetler/risk-yonetimi-ve-danismanlik/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">Risk Yönetimi ve Danışmanlık Hizmetleri</a> <br />
+
+                                    </span>
+                                    <br />
+                                </div>
+                            </div>
+                            <div style="flex: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                                <div class="mcnTextContent" style="padding-top: 0; padding-right: 0px; padding-bottom: 0px; padding-left: 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; white-space: nowrap; word-break: break-word; flex-flow: column; color: #FFFFFF; font-family: Securitas; font-size: 12px; line-height: 180%; text-align: left; box-sizing: border-box !important; ">
+                                    <span style="font-size: 14px; font-family: SecuritasB; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box !important;">
+                                        Web Tabanlı Platformlar <br>
+                                        <a href="https://portal.securitas.com.tr/#/giris" class="class1" style="font-size: 14px; color: white; font-family: Securitas; text-decoration: none" " >Çalışan Portalı</a> <br />
+                                        <a href="https://kurumsal.securitas.com.tr/#/login" class="class1" style="font-size: 14px; color: white; font-family: Securitas; text-decoration: none">Müşteri Portalı</a> <br />
+                                        <a href="https://basvuru.securitas.com.tr/Basvuru.aspx" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">E-Başvuru Portalı</a> <br />
+                                        <a href="https://www.securitas.com.tr/hakkimizda/bilgi-toplumu-hizmetleri/" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">Bilgi Toplumu Hizmetleri</a> <br />
+                                        <a href="https://www.securitasvakif.org/#/anasayfa" class="class1" style="font-size: 14px; font-family: Securitas; color: white; text-decoration: none">Securitas Türkiye <br />Yardımlaşma ve Dayanışma <br />Vakfı</a> <br />
+
+
+                                    </span>
+                                    <br />
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footerRightColumnContainer column" style="background:#transparent none no-repeat center/cover;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;flex: 1;background-color: #transparent;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;box-sizing: border-box !important;">
+                    <div width="100%" class="mcnBoxedTextBlock" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mcnFollowContent" style="display: flex;flex-direction: row;justify-content: center;flex: 1 1 auto;flex-wrap: wrap;padding-top: 9px;padding-left: 700px;padding-right: 9px;padding-bottom: 5px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+            <div style="display: flex;align-items: center;flex-direction: row;padding: 0px  18px  0px  9px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                <div class="mcnFollowIconContent" style="width: 24px;padding: 0px  0px  5px  0px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                    <a href="https://www.linkedin.com/company/securitasturkey/" target="_blank" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                        <img src="footer-img/linkedin.png" alt="LinkedIn" class="mcnFollowBlockIcon" width="100%" style="max-width: 20px;display: block;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;box-sizing: border-box !important;">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+            <div style="display: flex;align-items: center;flex-direction: row;padding: 0px  18px  0px  9px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                <div class="mcnFollowIconContent" style="width: 24px;padding: 0px  0px  5px  0px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                    <a href="https://twitter.com/SecuritasTR/" target="_blank" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                        <img src="footer-img/twitter.svg" alt="Twitter" class="mcnFollowBlockIcon" width="100%" style="max-width: 20px;display: block;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;box-sizing: border-box !important;">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+            <div style="display: flex;align-items: center;flex-direction: row;padding: 0px  18px  0px  9px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                <div class="mcnFollowIconContent" style="width: 24px;padding: 0px  0px  5px  0px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                    <a href="https://www.youtube.com/channel/UCGgQMyyfZcrETEqzj8k52sQ?view_as=subscriber" target="_blank" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                        <img src="footer-img/youtube.png" alt="YouTube" class="mcnFollowBlockIcon" width="100%" style="max-width: 20px;display: block;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;box-sizing: border-box !important;">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+            <div style="display: flex;align-items: center;flex-direction: row;padding: 0px  18px  0px  9px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                <div class="mcnFollowIconContent" style="width: 24px;padding: 0px  0px  5px  0px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                    <a href="https://tr-tr.facebook.com/securitasturkiye" target="_blank" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                        <img src="footer-img/facebook.png" alt="Facebook" class="mcnFollowBlockIcon" width="100%" style="max-width: 20px;display: block;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;box-sizing: border-box !important;">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+            <div style="display: flex;align-items: center;flex-direction: row;padding: 0px  9px  0px  9px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+
+                <div class="mcnFollowIconContent" style="width: 24px;padding: 0px  0px  5px  0px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                    <a href="https://www.instagram.com/accounts/login/?next=/securitasturkey/" target="_blank" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box !important;">
+                        <img src="footer-img/instagram.png" alt="Instagram" class="mcnFollowBlockIcon" width="100%" style="max-width: 20px;display: block;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border: 0;height: auto;outline: none;text-decoration: none;box-sizing: border-box !important;">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <script src="Script.js"></script>
+</body>
+</html>
